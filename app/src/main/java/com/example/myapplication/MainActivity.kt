@@ -94,6 +94,7 @@ class MainActivity : ComponentActivity() {
                         Text(text = "Eliminar tareas")
                     }
                     LazyColumn(modifier = Modifier
+                        .fillMaxWidth()
                         .weight(1f)) {
                         items(todoList) { todo ->
                             TodoItem(todo = todo)
